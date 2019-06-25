@@ -7,9 +7,6 @@ import static org.junit.Assert.*;
 
 public class Story1Stepdefs {
 
-
-//    public Story1Stepdefs() {
-
     @Given("^today is Sunday$")
     public void today_is_Sunday() {
         // Write code here that turns the phrase above into concrete actions
@@ -27,5 +24,4 @@ public class Story1Stepdefs {
         // Write code here that turns the phrase above into concrete actions
         throw new PendingException();
     }
-//    }
 }
