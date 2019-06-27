@@ -4,7 +4,7 @@
 `mvn test`
 
 ## Structure 
-- Features : `src/test/resources/kata/bankaccount/functional`
+- Features : `src/test/resources/features`
 - tests unitaires : `src/test/resources/kata/bankaccount/unit`
 
 ## Outils
