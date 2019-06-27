@@ -5,7 +5,6 @@ import kata.bankaccount.BankAccount;
 import kata.bankaccount.BankAccountRepository;
 import kata.bankaccount.functional.StepContext;
 
-import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
@@ -34,8 +33,7 @@ public class US3CheckStepDefs implements En {
         });
         When("I consult my operations", () -> {
             try {
-                BankAccount bankAccount = bankAccountRepository.findByClientNo(context.currentClientNo);
-//                context.currentOperations = bankAccount.consultOperations();
+                bankAccountRepository.findByClientNo(context.currentClientNo);
             } catch (Exception e) {
                 context.actualErrorMessage = e.getMessage();
             }

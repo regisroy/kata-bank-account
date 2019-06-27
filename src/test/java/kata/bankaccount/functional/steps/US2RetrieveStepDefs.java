@@ -6,7 +6,6 @@ import kata.bankaccount.BankAccountRepository;
 import kata.bankaccount.functional.StepContext;
 
 public class US2RetrieveStepDefs implements En {
-    private BankAccountRepository bankAccountRepository = new BankAccountRepository();
 
     public US2RetrieveStepDefs(BankAccountRepository bankAccountRepository, StepContext context) {
 

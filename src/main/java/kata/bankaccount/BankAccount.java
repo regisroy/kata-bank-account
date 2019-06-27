@@ -18,7 +18,8 @@ public class BankAccount {
         if (deposit.signum() == -1)
             throw new IllegalArgumentException("Deposit can't be negative");
         balance = balance.add(deposit);
-        bankAccountOperations.add(BankAccountOperation.createDepositOperation(deposit, operationDate, balance));
+        BankAccountOperation operation = BankAccountOperation.createDepositOperation(deposit, operationDate, balance);
+        bankAccountOperations.add(operation);
     }
 
     public void makeDeposit(Double deposit, Date operationDate) {
@@ -33,7 +34,8 @@ public class BankAccount {
         if (withdrawal.signum() == -1)
             throw new IllegalArgumentException("Withdrawal can't be negative");
         balance = balance.subtract(withdrawal);
-        bankAccountOperations.add(BankAccountOperation.createWithdrawalOperation(withdrawal, operationDate, balance));
+        BankAccountOperation operation = BankAccountOperation.createWithdrawalOperation(withdrawal, operationDate, balance);
+        bankAccountOperations.add(operation);
     }
 
     public void makeWithdrawal(Double withdrawal) {
